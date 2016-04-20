@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -19,29 +20,31 @@
           </nav>
       </header>
       <main class="container">
-        <div class="form">
+        <!-- <div class="form"> -->
           <form class="searh-hotel-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form-check">
-             <h3>Инфраструктура:</h3>
-              <input type="checkbox" name="pool" value="pool"checked>
-              <label>Бассейн</label><br>
+            <fieldset class="form-check">
+             <legend>Инфраструктура:</legend>
+              <input type="checkbox" name="pool" value="pool" checked>
+              <label>Бассейн</label>
               <input type="checkbox" name="parking" value="parking">
-              <label>Парковка</label><br>
+              <label>Парковка</label>
               <input type="checkbox" name="wifi" value="wifi">
               <label>WiFi</label>
-            </div>
-            <div class="form-check">
-              <h3>Тип жилья:</h3>
+            </fieldset> 
+            <fieldset class="form-check">
+              <legend>Тип жилья:</legend>
               <input type="checkbox" name="hotel" value="hotel" checked>
-              <label>Гостиница</label><br>
+              <label>Гостиница</label>
               <input type="checkbox" name="motel" value="motel">
-              <label>Мотель</label><br>
+              <label>Мотель</label>
               <input type="checkbox" name="appartment" value="appartment">
               <label>Аппартаменты</label>
-              <h3>Стоимость в сутки:</h3>
-              <input type="range" min="0" max="100" step="1" value="50"><br>
+            </fieldset>
+            <fieldset class="">
+              <legend>Стоимость в сутки:</legend>
+              <input type="range" min="0" max="100" step="1" value="50">
               <button class="btn" type="submit">Показать</button>
-            </div>
+            </fieldset>
           </form>
           <!-- <form class="searh-hotel-form" action="https://echo.htmlacademy.ru" method="post">
             <table>
@@ -67,42 +70,54 @@
               </tr>
             </table>
           </form> -->
-        </div>
+        <!-- </div> -->
         <div class="hotels-resalt">
           <div class="sort-bar">
-          <!-- <nav class="resalt-navigation"> -->
-          <h2>Найдено: 3</h2>
-            <ul>
+            <!-- <nav class="resalt-navigation"> -->
+            <div>Найдено: <span class="count">3</span></div>
+            <ul class="sorting-type">
               <li><strong>Сортировка:</strong></li>
               <li><a data-sortname="price" href="#">по цене</a></li>
               <li><a data-sortname="type" href="#">по типу</a></li>
               <li><a data-sortname="rate" href="#">по рейтингу</a></li>
             </ul>
-          <!-- </nav> -->
+            <ul class="sorting-direction">
+              <li><a data-direction="up" href="#">Вверх</a></li>
+              <li><a data-direction="down" href="#">Вниз</a></li>
+            </ul>
+            <!-- </nav> -->
           </div>
           <div class="hotels-list">
             <div class="hotel-item">
               <div class="hotel-img">
-                <img src="img/Amara-Resort-Spa-preview.jpg" width="150" height="100" alt="«Amara Resort»">
+                <a href="#"><img src="img/Amara-Resort-Spa-preview.jpg" width="150" height="100" alt="«Amara Resort»"></a>
               </div>
               <div class="hotel-name">
-                <h2>Amara Resort & Spa</h2>
-                <table class="price">
+                <h2><a href="#">Amara Resort & Spa</a></h2>
+                <div class="price">
+                  <span class="left">Гостиница</span>
+                  <span class="right">от 3500 р.</span>
+                </div>
+                <!-- <table class="price">
                   <tr>
                     <td>Гостиница</td>
                     <td>от 3500 р.</td>
                   </tr>
-                </table>
+                </table> -->
                 <div class="btn">
-                 <a class="btn-more" href="#">Подробнее</a>
-                 <a class="btn-booking" href="#">Забронировать</a>
+                 <a class="left btn-more" href="#">Подробнее</a>
+                 <a class="right btn-booking" href="#">Забронировать</a>
                 </div>
+              </div>
+              <div class="rating">
                 <div class="rate-star">
-                 <img src="img/star.png" width="16" height="16" alt="«star»">
+                  <span class="star">Star</span>
+                  <span class="star">Star</span>
+                  <span class="star">Star</span>
+                  <span class="star">Star</span>
+                 <!-- <img src="img/star.png" width="16" height="16" alt="«star»"> -->
                 </div>
-                <div class="rate-number">
-                 <strong>Рейтинг: 8,5</strong>
-                </div>
+                <div class="rate-number">Рейтинг: <span class="rate-count">8,5</span></div>
               </div>
             <div class="hotel-item">
               <div class="hotel-img">
@@ -150,7 +165,6 @@
                  <strong>Рейтинг: 8,5</strong>
                 </div>
               </div>  
-            
             </div>
           </div>
         </div>
