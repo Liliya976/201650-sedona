@@ -48,11 +48,27 @@ h3 {
 .main-headbg{
     outline: 1px dotted #ff1800;
     margin: 0;
-    background: url("../img/sedonawelcome.gif") no-repeat,
-                url("../img/sedona-head-bg.jpg") no-repeat;
+    background: url("../img/sedona-head-bg.jpg") no-repeat;
     float: left;
     width: 1200px;
     min-height: 507px;
+    text-align: center;
+    vertical-align: middle;
+} 
+
+/*.main-headbg :after{
+    content: '';
+    display: block;
+    clear: both;*/
+}
+
+
+.headbg-text{
+float: left;
+width: 458px;
+min-height: 352px;
+background: url("../img/sedonawelcome.gif") 50% 50% no-repeat;
+outline: 1px dotted #ff1800;
 }
 
 .main-navigation{
@@ -99,7 +115,7 @@ h3 {
     clear: both;
 }
 
-.about-sedona{
+.tagline{
     vertical-align: middle;
     text-align: center;
     min-height: 216px;
@@ -109,11 +125,33 @@ h3 {
     padding-top: 60px;
 }
 
-.text{
+.search{
+    min-height: 150px;
+}
+
+.tagline-search{
+    vertical-align: middle;
+    text-align: center;
+    min-height: 216px;
+    width: 1200px;
+    outline: 1px dotted #ff1800;
+    float: left;
+    padding-top: 60px;
+}
+
+
+.tagline-title{
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.tagline-text{
    font-size: 14px;
    text-transform: uppercase;
-    
 }
+
 .banner-1{
     width: 1200px;
     margin: 0;
@@ -129,7 +167,15 @@ h3 {
     background: url("../img/sedona-head-bg.jpg") no-repeat;
 }*/
 
+.tourist-info{
+    outline: 1px dotted #ff1800;
+}
 
+.tourist-info:after{
+    content: '';
+    display: block;
+    clear: both;
+}
 .container-img-right{
     float: right;
     width: 800px;
@@ -139,8 +185,8 @@ h3 {
 .container-text-left{
     float: left;
     width: 400px;
-    min-height: 256px;
-    vertical-align: middle;
+    min-height: 226px;
+    padding-top: 30px;
     text-align: center;
     background-color: #81b3d2;
 }
@@ -157,7 +203,11 @@ h3 {
 
 .content-name{
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 700;
+}
+
+.content-text{
+ color: #333333;
 }
 
 .container-img-left{
@@ -169,24 +219,151 @@ h3 {
 .container-text-right{
     float: right;
     width: 400px;
-    min-height: 256px;
-    vertical-align: middle;
+    min-height: 226px;
+    padding-top: 30px;
     text-align: center;
     background-color: #81b3d2;
 }
 
-.tourist-info{
-    outline: 1px dotted #ff1800;
-}
+
 .container-item{
     float: left;
     width: 400px;
-    min-height: 330px;
-    outline: 1px dotted #ff1800;  
+    min-height: 270px;
+    outline: 1px dotted #ff1800;
+    padding-top: 50px;
+    text-align: center;
 }
 
+.container-item p{
+   text-transform: uppercase;
+    color: #000;
+} 
 
+.features .container-item{
+    padding-top: 20px;
+    background-color: #eeeeee;
+    min-height: 235px;
+}
 
+.features:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-content{
+    outline: 1px dotted #ff1800;
+    float: left;
+    width: 1200px;
+    min-height: 653px;
+    background: url("../img/map.jpg") no-repeat;
+    background-position: bottom;
+}
+
+.form-content:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-content-btn{
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    background-color: #766357;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 568px;
+    min-height: 60px;
+    text-align: center;
+}
+
+.searh-form{
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 568px;
+    min-height: 395px;
+    text-align: center;
+    outline: 1px dotted #ff1800;
+    background-color: #fff;
+    box-shadow:0 0 5px #999;
+}
+
+.main-search fieldset{
+    width: 458px;
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: #81b3d2;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 468px;
+    min-height: 60px;
+    text-align: center;
+    border: none;
+}
+
+.main-footer{
+    width:1200px;
+    min-height: 120px;
+    outline: 1px dotted #ff1800;
+    margin-top:-120px;
+    background-color: #fff 50;
+    float: left;
+    color: #000;
+    text-align: center;
+
+}
+
+.main-footer:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.footer{
+    float: left;
+    padding-top: 10px;
+    outline: 1px dotted #ff1800;
+    width: 400px;
+    min-height: 120px;
+    vertical-align: middle;  
+}
+
+.contacts{
+    font-size: 21px;
+    text-decoration:none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+}
+
+.social-btn{
+    margin: 0 5px;
+}
+
+.footer-copyright{
+    display: inline-block;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+
+/*.footer-copyright a{
+    display: inline-block;
+}*/
 
 /*.index-logo {
     background-image: url("../img/sedona-view-1-small.jpg");
