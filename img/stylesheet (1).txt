@@ -1,0 +1,23 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-facebook {
+    width: 10px;
+    height: 19px;
+    background-position: -5px -5px;
+}
+
+.sprite-twitter {
+    width: 17px;
+    height: 15px;
+    background-position: -25px -5px;
+}
+
+.sprite-ytube {
+    width: 20px;
+    height: 16px;
+    background-position: -52px -5px;
+}

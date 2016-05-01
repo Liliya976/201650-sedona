@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -33,16 +34,15 @@
       <main class="main-container">
         <!-- слоган -->
         <div class="tagline">
-          <h2 class="tagline-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+          <h2 class="tagline-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="tagline-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
         <!-- баннер-1 -->
-          <div class="banner-1">
+          <div class="banner-1 banner-left">
             <div class="container-text-left">
               <p class="content-name">Настоящий <br> городок</p>
-              <p class="content-number">№1</p>
-              <p>Седона — не аттракцион для туристов, <br> там течет своя жизнь</p></div>
-            <div class="container-img-right"></div>
+              <p class="content-number number-white">№1</p>
+              <p class="content">Седона — не аттракцион для туристов, <br> там течет своя жизнь</p></div>
           </div>
 
          <!--  <div class="banner banner-left">
@@ -52,22 +52,20 @@
               <p class="content-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
             </div>
           </div> -->
-
-
-        <!-- информация-1 -->
-          <div class="tourist-info">
+     <!-- информация-1 -->
+          <div class="tourist-info clearfix">
             <div class="container-item">
-              <img src="img/home.png" width="75" height="72" alt="«home»">
+              <div class="content-icon sprite-home">home</div>
               <p class="content-name">Жилье</p>
-              <p>Рекомендуем пожить в настоящем мотеле, <br> все как в кино!</p>
+              <p class="content-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
             <div class="container-item">
-              <img src="img/food.png" width="74" height="70" alt="«food»">
+              <div class="content-icon sprite-food">food</div>
               <p class="content-name">Еда</p>
               <p class="content-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </div>
             <div class="container-item">
-              <img src="img/gift.png" width="64" height="76" alt="«souvenir»">
+              <div class="content-icon sprite-gift">gift</div>
               <!-- <b class="info-name">Сувениры</b>
               <p> Не только китайского, но и местного производства!</p> -->
               <p class="content-name">Сувениры</p>
@@ -75,15 +73,22 @@
             </div>
           </div>
         <!-- баннер-2 -->
-         <div class="banner-1">
+     <!--     <div class="banner-1">
             <div class="container-text-right">
               <p class="content-name">Там есть <br> мост дьявола</p>
               <p class="content-number">№2</p>
               <p class="content-text">Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p></div>
             <div class="container-img-left"></div>
-          </div>
+          </div> -->
+
+         <div class="banner-1 banner-right">
+            <div class="container-text-left">
+              <p class="content-name">Там есть <br> мост дьявола</p>
+              <p class="content-number number-white">№1</p>
+              <p>Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p></div>
+         </div>  
         <!-- информация-2 -->
-          <div class="features">
+          <div class="features clearfix">
             <div class="container-item">
               <p class="content-name">Небольшая <br> площадь</p>
               <p class="content-number">№3</p>
@@ -102,7 +107,7 @@
           </div>
         <!-- слоган-2 -->
           <div class="tagline-search">
-            <strong class="tagline-title">Заинтересовались?</strong>
+            <strong class="tagline-title bigger">Заинтересовались?</strong>
             <p class="tagline-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
         <!-- форма -->
@@ -117,7 +122,7 @@
                 <label for="date-out">Дата выезда:</label>
                 <input id="date-out" type="date" name="check-out-date" placeholder="25 апреля 2016">
               </fieldset>
-              <fieldset class="main-search">
+              <fieldset class="main-search person">
                 <fieldset>
                   <label for="adult">Взрослые:</label>
                   <input id="adult" type="text" name="adult" value="2">
@@ -127,7 +132,7 @@
                   <input id="children" type="text" name="child" placeholder="1">
                 </fieldset>
               </fieldset>
-              <button class="btn" type="submit">Найти</button>
+              <button class="btn-search" type="submit">Найти</button>
               <!-- <input type="submit" value="Найти"> -->
             </form>
           </div>
@@ -140,14 +145,16 @@
           <a class="contacts" href="#">Vizitsedona</a>
         </div>
         <!-- соцсети -->
-       <div class="footer">
-          <a class="social-btn social-btn-tw" href="#"><img src="img/twitter-box.png" width="46" height="48" alt="Твиттер"></a>
-          <a class="social-btn social-btn-fb" href="#"><img src="img/facebook-box.png" width="46" height="48" alt="Фейсбук"></a>
-          <a class="social-btn social-btn-ytube" href="#"><img src="img/ytube-box.png" width="46" height="48" alt="Ютьюб"></a>
+
+        <div class="footer">
+              <a class="social-btn sprite-twitter" href="#">twitter</a>
+              <a class="social-btn sprite-facebook" href="#">facebook</a>
+              <a class="social-btn sprite-ytube" href="#">youtube</a>
         </div>
+
         <!-- копирайт -->
         <div class="footer"><p class="footer-copyright">website by</p>
-          <a class="footer-copyright" href="https://htmlacademy.ru"><img src="img/logo-academy.png" width="113" height="39" alt="htmlacademy"></a>
+          <a class="footer-logo-academy logo-sprite" href="https://htmlacademy.ru">htmlacademy</a>
         </div>
        </footer>
     </div>
