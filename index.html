@@ -42,57 +42,39 @@
             <div class="container-text-left">
               <p class="content-name">Настоящий <br> городок</p>
               <p class="content-number number-white">№1</p>
-              <p class="content">Седона — не аттракцион для туристов, <br> там течет своя жизнь</p></div>
+              <p class="content-p">Седона — не аттракцион для туристов, <br> там течет своя жизнь</p></div>
           </div>
 
-         <!--  <div class="banner banner-left">
-            <div class="container-item container-item-blue">
-              <p class="content-name">Настоящий <br> городок</p>
-              <p class="content-number">№1</p>
-              <p class="content-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
-          </div> -->
      <!-- информация-1 -->
           <div class="tourist-info clearfix">
             <div class="container-item">
-              <div class="content-icon sprite-home">home</div>
+              <div class="content-icon sprite-home"></div>
               <p class="content-name">Жилье</p>
               <p class="content-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
             <div class="container-item">
-              <div class="content-icon sprite-food">food</div>
+              <div class="content-icon sprite-food"></div>
               <p class="content-name">Еда</p>
               <p class="content-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </div>
             <div class="container-item">
-              <div class="content-icon sprite-gift">gift</div>
-              <!-- <b class="info-name">Сувениры</b>
-              <p> Не только китайского, но и местного производства!</p> -->
-              <p class="content-name">Сувениры</p>
+              <div class="content-icon sprite-gift"></div>
+                      <p class="content-name">Сувениры</p>
               <p class="content-text">Не только китайского, но и местного производства!</p>
             </div>
           </div>
-        <!-- баннер-2 -->
-     <!--     <div class="banner-1">
-            <div class="container-text-right">
-              <p class="content-name">Там есть <br> мост дьявола</p>
-              <p class="content-number">№2</p>
-              <p class="content-text">Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p></div>
-            <div class="container-img-left"></div>
-          </div> -->
-
-         <div class="banner-1 banner-right">
+          <div class="banner-1 banner-right">
             <div class="container-text-left">
               <p class="content-name">Там есть <br> мост дьявола</p>
-              <p class="content-number number-white">№1</p>
-              <p>Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p></div>
+              <p class="content-number number-white">№2</p>
+              <p class="content-p">Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p></div>
          </div>  
         <!-- информация-2 -->
           <div class="features clearfix">
             <div class="container-item">
               <p class="content-name">Небольшая <br> площадь</p>
               <p class="content-number">№3</p>
-              <p class="content-text">ВСЕ достопримечательности находятся очень близко</p>
+              <p class="content-text other">ВСЕ достопримечательности находятся очень близко</p>
             </div>
             <div class="container-item">
               <p class="content-name">Красивая <br> дорога</p>
@@ -125,11 +107,19 @@
               <fieldset class="main-search person">
                 <fieldset>
                   <label for="adult">Взрослые:</label>
-                  <input id="adult" type="text" name="adult" value="2">
+                  <div class="main-search-button">
+                    <button class="minus"></button>
+                    <input id="adult" type="text" name="adult" value="2">
+                    <button class="plus"></button>
+                  </div>
                 </fieldset>
                 <fieldset>
-                  <label for="children">Дети:</label>
-                  <input id="children" type="text" name="child" placeholder="1">
+                  <label class="child" for="children">Дети:</label>
+                  <div class="main-search-button">
+                    <button class="minus"></button>
+                    <input id="children" type="text" name="child" placeholder="1">
+                    <button class="plus"></button>
+                  </div>
                 </fieldset>
               </fieldset>
               <button class="btn-search" type="submit">Найти</button>
