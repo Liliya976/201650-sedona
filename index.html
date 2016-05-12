@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -13,11 +13,11 @@
        <!-- меню -->
           <nav class="main-navigation">
             <ul>
-              <li><a href="#">Информация</a></li>
-              <li><a href="#">Фото и видео</a></li>
-              <li class="logocity"><a href="#"><img src="img/logocity2.png" width="138" height="70" alt="«Logo Sedona»"></a></li>
-              <li><a href="#">Карта штата</a></li>
-              <li><a href="#">Гостиницы</a></li>
+              <li><a href="info.html">Информация</a></li>
+              <li><a href="media.html">Фото и видео</a></li>
+              <li class="logocity"><a href="index.html"><img src="img/logocity2.png" width="138" height="70" alt="«Logo Sedona»"></a></li>
+              <li><a href="mapstate.html">Карта штата</a></li>
+              <li><a href="hotels.html">Гостиницы</a></li>
             </ul>
           </nav>
        <!-- слайд -->   
@@ -45,7 +45,7 @@
               <p class="content-p">Седона — не аттракцион для туристов, <br> там течет своя жизнь</p></div>
           </div>
 
-     <!-- информация-1 -->
+        <!-- информация-1 -->
           <div class="tourist-info clearfix">
             <div class="container-item">
               <div class="content-icon sprite-home"></div>
@@ -98,18 +98,22 @@
             <form class="searh-form" action="https://echo.htmlacademy.ru" method="post">
               <fieldset class="main-search">
                 <label for="date-in">Дата заезда:</label>
-                <input id="date-in" type="date" name="check-in-date" placeholder="24 апреля 2016">
+                <div class="input-wrap">
+                  <input id="date-in" type="text" name="check-in-date" placeholder="24 апреля 2016">
+                </div>
               </fieldset>
               <fieldset class="main-search">
                 <label for="date-out">Дата выезда:</label>
-                <input id="date-out" type="date" name="check-out-date" placeholder="25 апреля 2016">
+                <div class="input-wrap">
+                  <input id="date-out" type="text" name="check-out-date" placeholder="25 апреля 2016">
+                </div>
               </fieldset>
               <fieldset class="main-search person">
                 <fieldset>
                   <label for="adult">Взрослые:</label>
                   <div class="main-search-button">
                     <button class="minus"></button>
-                    <input id="adult" type="text" name="adult" value="2">
+                    <input id="adult" type="text" name="adult" placeholder="2">
                     <button class="plus"></button>
                   </div>
                 </fieldset>
@@ -126,27 +130,26 @@
               <!-- <input type="submit" value="Найти"> -->
             </form>
           </div>
-        <!-- карта -->
-          <div class="map"></div>
+        
        </main>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1999.017185720476!2d30.353922!3d59.931857!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5e66d51c5%3A0x6f00589ac258db97!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sru!4v1462660589721" allowfullscreen></iframe>
+      </div>
       <footer class="main-footer">
-        <!-- контакты -->
         <div class="footer">
           <a class="contacts" href="#">Vizitsedona</a>
         </div>
-        <!-- соцсети -->
-
         <div class="footer">
-              <a class="social-btn sprite-twitter" href="#">twitter</a>
-              <a class="social-btn sprite-facebook" href="#">facebook</a>
-              <a class="social-btn sprite-ytube" href="#">youtube</a>
+          <a class="social-btn sprite-twitter" href="#">twitter</a>
+          <a class="social-btn sprite-facebook" href="#">facebook</a>
+          <a class="social-btn sprite-ytube" href="#">youtube</a>
         </div>
-
-        <!-- копирайт -->
-        <div class="footer"><p class="footer-copyright">website by</p>
+        <div class="footer">
+          <p class="footer-copyright">website by</p>
           <a class="footer-logo-academy logo-sprite" href="https://htmlacademy.ru">htmlacademy</a>
         </div>
        </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
