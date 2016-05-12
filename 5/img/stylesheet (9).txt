@@ -1,0 +1,191 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow-down {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -5px;
+}
+
+.sprite-arrow-down-dwn {
+    width: 11px;
+    height: 10px;
+    background-position: -26px -5px;
+}
+
+.sprite-arrow-down-hvr {
+    width: 11px;
+    height: 10px;
+    background-position: -47px -5px;
+}
+
+.sprite-arrow-up {
+    width: 11px;
+    height: 10px;
+    background-position: -68px -5px;
+}
+
+.sprite-arrow-up-dwn {
+    width: 11px;
+    height: 10px;
+    background-position: -89px -5px;
+}
+
+.sprite-arrow-up-hvr {
+    width: 11px;
+    height: 10px;
+    background-position: -110px -5px;
+}
+
+.sprite-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -131px -5px;
+}
+
+.sprite-calendar-down {
+    width: 21px;
+    height: 22px;
+    background-position: -162px -5px;
+}
+
+.sprite-calendar-hvr {
+    width: 21px;
+    height: 22px;
+    background-position: -193px -5px;
+}
+
+.sprite-checkbox {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -37px;
+}
+
+.sprite-checkbox-disabled {
+    width: 22px;
+    height: 22px;
+    background-position: -37px -37px;
+}
+
+.sprite-checkbox-on {
+    width: 26px;
+    height: 22px;
+    background-position: -69px -37px;
+}
+
+.sprite-checkbox-on-disabled {
+    width: 26px;
+    height: 22px;
+    background-position: -105px -37px;
+}
+
+.sprite-facebook {
+    width: 10px;
+    height: 19px;
+    background-position: -141px -37px;
+}
+
+.sprite-food {
+    width: 74px;
+    height: 70px;
+    background-position: -141px -66px;
+}
+
+.sprite-gift {
+    width: 64px;
+    height: 76px;
+    background-position: -5px -146px;
+}
+
+.sprite-home {
+    width: 74px;
+    height: 72px;
+    background-position: -79px -146px;
+}
+
+.sprite-logo-academy {
+    width: 113px;
+    height: 39px;
+    background-position: -5px -69px;
+}
+
+.sprite-logo-academy-down {
+    width: 113px;
+    height: 39px;
+    background-position: -224px -5px;
+}
+
+.sprite-logo-academy-hvr {
+    width: 113px;
+    height: 39px;
+    background-position: -225px -54px;
+}
+
+.sprite-minus-btns {
+    width: 12px;
+    height: 3px;
+    background-position: -225px -103px;
+}
+
+.sprite-minus-btns-down {
+    width: 12px;
+    height: 3px;
+    background-position: -247px -103px;
+}
+
+.sprite-minus-btns-hvr {
+    width: 12px;
+    height: 3px;
+    background-position: -269px -103px;
+}
+
+.sprite-plus-btns {
+    width: 11px;
+    height: 11px;
+    background-position: -291px -103px;
+}
+
+.sprite-plus-btns-down {
+    width: 11px;
+    height: 11px;
+    background-position: -312px -103px;
+}
+
+.sprite-plus-btns-hvr {
+    width: 11px;
+    height: 11px;
+    background-position: -333px -103px;
+}
+
+.sprite-slide {
+    width: 20px;
+    height: 23px;
+    background-position: -225px -124px;
+}
+
+.sprite-slide-hvr {
+    width: 20px;
+    height: 23px;
+    background-position: -255px -124px;
+}
+
+.sprite-star {
+    width: 18px;
+    height: 17px;
+    background-position: -285px -124px;
+}
+
+.sprite-twitter {
+    width: 17px;
+    height: 14px;
+    background-position: -313px -124px;
+}
+
+.sprite-ytube {
+    width: 20px;
+    height: 16px;
+    background-position: -163px -148px;
+}
