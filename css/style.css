@@ -27,8 +27,9 @@ h3 {
 }
 
 .container {
-	min-width: 768px;
+	min-width: 748px;
 	max-width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	background: #fff;
 	box-shadow: 0 0 10px #999;
@@ -121,14 +122,9 @@ li .active:active {
 	color: rgba(118, 99, 87, 0.3);
 }
 
-.bg-cover {
-	height: 57px;
-	margin-top: -57px;
-	background: url("../img/mask-bg.png") no-repeat;
-	background-size: 100% 100%;
-}
-
-.bg-cover {
+.cover:after {
+	content: "";
+	display: block;
 	height: 57px;
 	margin-top: -57px;
 	background: url("../img/mask-bg.png") no-repeat;
@@ -219,11 +215,11 @@ li .active:active {
 }
 
 .content-name {
-	max-width: 160px;
+	max-width: 150px;
 	margin: 0 auto 25px;
 	font-size: 21px;
 	font-weight: 700;
-	line-height: 1;
+	line-height: 21px;
 }
 
 .content-text {
@@ -238,6 +234,7 @@ li .active:active {
 
 .content-p {
 	margin: 0;
+	padding: 0 15px;
 }
 
 .content-number {
@@ -347,7 +344,7 @@ li .active:active {
 
 .form-check {
 	float: left;
-	width: 256px;
+	width: 25%;
 	min-height: 170px;
 	border: none;
 	text-align: left;
@@ -383,7 +380,7 @@ li .active:active {
 	padding: 0 0 0 41px;
 }
 
-[type="checkbox"] + label:before {
+input[type="checkbox"] + label:before {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -394,9 +391,21 @@ li .active:active {
 	cursor: pointer;
 }
 
-[type="checkbox"]:checked + label:before {
+input[type="checkbox"]:checked + label:before {
 	width: 26px;
 	background-position: -69px -37px;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:disabled + label:before {
+	width: 26px;
+	background-position: -37px -37px;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:disabled:checked + label:before {
+	width: 26px;
+	background-position: -105px -37px;
 	cursor: pointer;
 }
 
@@ -417,13 +426,15 @@ li .active:active {
 
 .price-range {
 	float: right;
-	width: 333px;
+	width: 50%;
+	max-width: 330px;
 	min-height: 170px;
+	padding-left: 15px;
 	text-align: left;
 }
 
 .price-range-title {
-	margin-bottom: 12px;
+	margin: 0 0 12px 13px;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 21px;
@@ -553,7 +564,7 @@ li .active:active {
 	background-color: #eee;
 }
 
-/*форма поиска отелей на главной*/
+/*форма поиска отелей для главной*/
 
 .form-content {
 	position: relative;
@@ -684,6 +695,9 @@ fieldset {
 	vertical-align: middle;
 	text-transform: uppercase;
 }
+.main-search input:focus {
+	outline: none;
+}
 
 .person label {
 	width: 111px;
@@ -728,6 +742,10 @@ fieldset {
 	background: #f2f2f2;
 	line-height: 38px;
 	cursor: pointer;
+}
+
+.person button:focus {
+outline-style: none;
 }
 
 .child {
@@ -937,7 +955,7 @@ fieldset {
 
 .sort-bar {
 	margin: 0;
-	padding: 26px 70px 29px;
+	padding: 32px 70px 22px;
 	border-bottom: 1px solid #e5e5e5;
 	font-size: 0;
 	text-transform: uppercase;
@@ -945,24 +963,30 @@ fieldset {
 
 .sort-resalt {
 	display: inline-block;
-	width: 166px;
 	margin: 0 auto;
 	font-size: 21px;
 	font-weight: 700;
+	vertical-align: bottom;
+	line-height: 21px;
+	margin: 0 15px 0 0;
 }
 
 .sorting-type {
 	display: inline-block;
-	width: 791px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	vertical-align: bottom;
 }
 
 .sorting-type li {
 	display: inline-block;
-	padding-right: 39px;
+	padding-right: 30px;
 	font-size: 12px;
+}
+
+.sorting-type li:last-child {
+	padding-right: 0px;
 }
 
 .sorting-type a {
@@ -992,8 +1016,10 @@ fieldset {
 
 .sorting-direction {
 	display: inline-block;
-	width: 100px;
+	float: right;
+	width: 55px;
 	text-align: right;
+	padding: 11px 0;
 }
 
 .sorting-direction li {
@@ -1035,21 +1061,26 @@ fieldset {
 /*классы для строки отеля*/
 
 .hotel-item {
-	padding: 0 0 24px 0;
+	padding: 30px 70px 24px;
 	border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-img {
 	float: left;
-	width: 167px;
-	margin-left: 70px;
-	padding-top: 30px;
+	width: 23%;
+	margin-right: 2%;
+}
+.hotel-img img{
+    border-style: none;
+    max-width: 135px;
+    height: auto;
+    max-height: 90px;
+    width: 100%;
 }
 
 .hotel-name {
 	float: left;
-	width: 30%;
-	padding-top: 30px;
+	width: 45%;
 }
 
 .hotel-name h2 {
@@ -1074,9 +1105,7 @@ fieldset {
 
 .rating {
 	float: right;
-	width: 30%;
-	margin-right: 70px;
-	padding-top: 30px;
+	width: 20%;
 	text-align: right;
 }
 
